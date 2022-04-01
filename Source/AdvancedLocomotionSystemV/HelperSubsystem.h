@@ -6,7 +6,6 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "HelperSubsystem.generated.h"
 
-class APawn;
 /**
  * 
  */
@@ -14,5 +13,9 @@ UCLASS()
 class ADVANCEDLOCOMOTIONSYSTEMV_API UHelperSubsystem : public UGameInstanceSubsystem
 {
 	GENERATED_BODY()
+public:
+	UFUNCTION(BlueprintCallable)
+	float GetAnimationLenght(
+		UAnimSequence* sequence );
 
 };
